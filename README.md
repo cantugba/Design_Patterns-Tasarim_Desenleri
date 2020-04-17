@@ -6,11 +6,11 @@ Tasarım Desenleri
 SOLID: yazılım tasarım prensipleri için kullanılan bir kısaltmadır.
 - Yazılım yaparken SOLID uygulandığı taktirde bakımı ve geliştirilmesi kolay yazılım sistemleri oluşturmak mümkündür.
 
--S SRP Single Responsibility Principle Her yazılım biriminin (sınıf, nesne, metot) tek bir sorumluluğu olmalıdır.
--O OCP Open/Closed Principle Yazılım birimleri geliştirilmeye açık, değişikliğe kapalı olmalıdır.
--L LSP Liskov’s Substitution Principle Alt sınıflardan oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı          davranışı göstermek zorundadırlar.
--I ISP Interface Segregation Principle Herşeyi ihtiva eden interface sınıflar yerine belli bir işlemi yapan interface sınıflar                oluşturulmalıdır.
--D DIP Dependency Inversion Principle Bağımlılıklar soyut sınıflara doğru olmalıdır.
+-Single Responsibility Principle Her yazılım biriminin (sınıf, nesne, metot) tek bir sorumluluğu olmalıdır.
+-Open/Closed Principle Yazılım birimleri geliştirilmeye açık, değişikliğe kapalı olmalıdır.
+-Liskov’s Substitution Principle Alt sınıflardan oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı          davranışı göstermek zorundadırlar.
+-Interface Segregation Principle Herşeyi ihtiva eden interface sınıflar yerine belli bir işlemi yapan interface sınıflar                  oluşturulmalıdır.
+-Dependency Inversion Principle Bağımlılıklar soyut sınıflara doğru olmalıdır.
 
 
 Genel olarak tasarım kalıpları 3'e ayrılır: 
