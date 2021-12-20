@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Creational/AbstractFactory/Java/AbstractFactory/AbstractFactory.iml" filepath="$PROJECT_DIR$/Creational/AbstractFactory/Java/AbstractFactory/AbstractFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Adapter/Java/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Structural/Adapter/Java/Adapter/Adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Adapter/Java/Adapter2/Adapter2.iml" filepath="$PROJECT_DIR$/Structural/Adapter/Java/Adapter2/Adapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Bridge/Java/Bridge/Bridge.iml" filepath="$PROJECT_DIR$/Structural/Bridge/Java/Bridge/Bridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Bridge/Java/Bridge2/Bridge2.iml" filepath="$PROJECT_DIR$/Structural/Bridge/Java/Bridge2/Bridge2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/ChainOfResponsibility/Java/ChainOfResponsibility/ChainOfResponsibility.iml" filepath="$PROJECT_DIR$/Behavioral/ChainOfResponsibility/Java/ChainOfResponsibility/ChainOfResponsibility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Design_Patterns-Tasarim_Desenleri.iml" filepath="$PROJECT_DIR$/.idea/Design_Patterns-Tasarim_Desenleri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Facade/Java/Facade/Facade.iml" filepath="$PROJECT_DIR$/Structural/Facade/Java/Facade/Facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Structural/Facade/Java/Facade2/Facade2.iml" filepath="$PROJECT_DIR$/Structural/Facade/Java/Facade2/Facade2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Creational/Singleton/Java.iml" filepath="$PROJECT_DIR$/Creational/Singleton/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/Observer/Java/Observer/Observer.iml" filepath="$PROJECT_DIR$/Behavioral/Observer/Java/Observer/Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/Observer/Java/Observer2/Observer2.iml" filepath="$PROJECT_DIR$/Behavioral/Observer/Java/Observer2/Observer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Creational/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Creational/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/Strategy/Java/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Behavioral/Strategy/Java/Strategy/Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/Visitor/Java/Visitor/Visitor.iml" filepath="$PROJECT_DIR$/Behavioral/Visitor/Java/Visitor/Visitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Behavioral/Visitor/Java/Visitor2/Visitor2.iml" filepath="$PROJECT_DIR$/Behavioral/Visitor/Java/Visitor2/Visitor2.iml" />
+    </modules>
+  </component>
+</project>
