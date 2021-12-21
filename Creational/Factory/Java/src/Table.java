@@ -11,7 +11,7 @@ public abstract class Table {
     }
 
     public void attachLegs() {
-        System.out.println("Attaching Legs");
+        System.out.println("Attaching Legs.");
     }
 
     public void attachTableTop() {
