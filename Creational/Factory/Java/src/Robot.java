@@ -1,21 +1,11 @@
-// another exaxmple
 import java.util.Scanner;
 
 /** Product - Robot */
 abstract class Robot {
-    private int power;
-
-    Robot(int power) {
-        this.power = power;
-    }
 
     public abstract String getName();
-
     public abstract String getDescription();
-
-    public int getPower() {
-        return power;
-    }
+    public abstract int getPower();
 
     @Override
     public String toString() {
@@ -30,18 +20,19 @@ abstract class Robot {
 enum RobotType {
     ROBOT_CLEANER,
     ROBOT_GUARDIAN;
-    /**  write your code here ... */
 }
 
 /** Concrete Product - Robot Cleaner */
 class RobotCleaner extends Robot {
+
     private String name;
     private String description;
+    private int power;
 
     public RobotCleaner(String name, String description, int power) {
-        super(power);
         this.name = name;
         this.description = description;
+        this.power = power;
     }
 
     @Override
@@ -55,21 +46,27 @@ class RobotCleaner extends Robot {
     }
 
     @Override
+    public int getPower() {
+        return this.power;
+    }
+
+    @Override
     public String toString() {
         return "cleaner-" + super.toString();
     }
-
 }
 
 /** Concrete Product - Robot Guardian */
 class RobotGuardian extends Robot {
+
     private String name;
     private String description;
+    private int power;
 
     public RobotGuardian(String name, String description, int power) {
-        super(power);
         this.name = name;
         this.description = description;
+        this.power = power;
     }
 
     @Override
@@ -83,10 +80,14 @@ class RobotGuardian extends Robot {
     }
 
     @Override
-    public String toString() {
-        return "cleaner-" + super.toString();
+    public int getPower() {
+        return this.power;
     }
 
+    @Override
+    public String toString() {
+        return "guardian-" + super.toString();
+    }
 }
 
 class RobotFactory {
@@ -105,9 +106,6 @@ class RobotFactory {
 }
 
 class RobotDemo {
-    private static final int CLEANER_POWER = 100;
-    private static final int GUARDIAN_POWER = 200;
-
     public static void main(String[] args) {
 
         RobotFactory robotFactory = new RobotFactory();
@@ -115,13 +113,11 @@ class RobotDemo {
 
         String nameCleaner = scanner.nextLine();
         Robot robotCleaner = robotFactory.getRobot(RobotType.ROBOT_CLEANER, nameCleaner,
-                "Robot will clean my room and dry my socks",
-                CLEANER_POWER);
+                "Robot will clean my room and dry my socks", 100);
 
         String nameGuardian = scanner.nextLine();
         Robot robotGuardian = robotFactory.getRobot(RobotType.ROBOT_GUARDIAN, nameGuardian,
-                "Knight will secure my daughter while she sleeping",
-                GUARDIAN_POWER);
+                "Knight will secure my daughter while she sleeping", 200);
 
         System.out.println(robotCleaner);
         System.out.println(robotGuardian);
