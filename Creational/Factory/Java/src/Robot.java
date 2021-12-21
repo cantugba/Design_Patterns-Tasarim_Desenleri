@@ -29,7 +29,7 @@ abstract class Robot {
 /** Robot types */
 enum RobotType {
     ROBOT_CLEANER,
-    ROBOT_GUARDIAN,
+    ROBOT_GUARDIAN;
     /**  write your code here ... */
 }
 
