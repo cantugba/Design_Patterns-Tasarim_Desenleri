@@ -2,10 +2,19 @@ import java.util.Scanner;
 
 /** Product - Robot */
 abstract class Robot {
+    private int power;
+
+    Robot(int power) {
+        this.power = power;
+    }
 
     public abstract String getName();
+
     public abstract String getDescription();
-    public abstract int getPower();
+
+    public int getPower() {
+        return power;
+    }
 
     @Override
     public String toString() {
@@ -19,20 +28,18 @@ abstract class Robot {
 /** Robot types */
 enum RobotType {
     ROBOT_CLEANER,
-    ROBOT_GUARDIAN;
+    ROBOT_GUARDIAN
 }
 
 /** Concrete Product - Robot Cleaner */
 class RobotCleaner extends Robot {
-
     private String name;
     private String description;
-    private int power;
 
     public RobotCleaner(String name, String description, int power) {
+        super(power);
         this.name = name;
         this.description = description;
-        this.power = power;
     }
 
     @Override
@@ -43,30 +50,24 @@ class RobotCleaner extends Robot {
     @Override
     public String getDescription() {
         return this.description;
-    }
-
-    @Override
-    public int getPower() {
-        return this.power;
     }
 
     @Override
     public String toString() {
         return "cleaner-" + super.toString();
     }
+
 }
 
 /** Concrete Product - Robot Guardian */
 class RobotGuardian extends Robot {
-
     private String name;
     private String description;
-    private int power;
 
     public RobotGuardian(String name, String description, int power) {
+        super(power);
         this.name = name;
         this.description = description;
-        this.power = power;
     }
 
     @Override
@@ -77,11 +78,6 @@ class RobotGuardian extends Robot {
     @Override
     public String getDescription() {
         return this.description;
-    }
-
-    @Override
-    public int getPower() {
-        return this.power;
     }
 
     @Override
@@ -95,17 +91,19 @@ class RobotFactory {
     /** Factory method */
     public Robot getRobot(RobotType type, String name, String description, int power) {
         switch (type) {
-            case ROBOT_CLEANER:
-                return new RobotCleaner(name, description, power);
             case ROBOT_GUARDIAN:
                 return new RobotGuardian(name, description, power);
+            case ROBOT_CLEANER:
             default:
-                return null;
+                return new RobotCleaner(name, description, power);
         }
     }
 }
 
 class RobotDemo {
+    private static final int CLEANER_POWER = 100;
+    private static final int GUARDIAN_POWER = 200;
+
     public static void main(String[] args) {
 
         RobotFactory robotFactory = new RobotFactory();
@@ -113,11 +111,13 @@ class RobotDemo {
 
         String nameCleaner = scanner.nextLine();
         Robot robotCleaner = robotFactory.getRobot(RobotType.ROBOT_CLEANER, nameCleaner,
-                "Robot will clean my room and dry my socks", 100);
+                "Robot will clean my room and dry my socks",
+                CLEANER_POWER);
 
         String nameGuardian = scanner.nextLine();
         Robot robotGuardian = robotFactory.getRobot(RobotType.ROBOT_GUARDIAN, nameGuardian,
-                "Knight will secure my daughter while she sleeping", 200);
+                "Knight will secure my daughter while she sleeping",
+                GUARDIAN_POWER);
 
         System.out.println(robotCleaner);
         System.out.println(robotGuardian);
