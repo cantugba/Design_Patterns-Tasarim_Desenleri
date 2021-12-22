@@ -1,3 +1,5 @@
+package TableFactory;
+
 //IProduct
 public abstract class Table {
     private String name;

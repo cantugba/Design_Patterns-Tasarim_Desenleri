@@ -1,3 +1,7 @@
+package TableFactory;
+
+import TableFactory.TableStore;
+
 public class TestDrive {
     public static void main(String[] args) {
         TableStore tableStore = new TableStore();
