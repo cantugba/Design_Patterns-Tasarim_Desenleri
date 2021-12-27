@@ -1,4 +1,4 @@
-package Facade;
+package Facade2;
 //Facade
 public class Bilgisayar {
     final private Bellek bellek;

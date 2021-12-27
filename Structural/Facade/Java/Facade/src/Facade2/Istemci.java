@@ -1,4 +1,4 @@
-package Facade;
+package Facade2;
 
 
 public class Istemci {

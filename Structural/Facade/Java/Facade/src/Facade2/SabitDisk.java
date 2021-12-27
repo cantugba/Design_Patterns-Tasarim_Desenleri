@@ -1,4 +1,4 @@
-package Facade;
+package Facade2;
 
 public class SabitDisk {
     public String oku(final String baslangic_adresi,final String uzunluk){
