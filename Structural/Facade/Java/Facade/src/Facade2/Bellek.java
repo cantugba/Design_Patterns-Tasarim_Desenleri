@@ -1,4 +1,4 @@
-package Facade;
+package Facade2;
 
 public class Bellek {
     public void yukle(final String adres,final String bilgi){
