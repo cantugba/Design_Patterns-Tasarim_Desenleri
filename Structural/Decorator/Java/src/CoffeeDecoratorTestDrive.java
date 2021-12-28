@@ -7,7 +7,7 @@ class CoffeeDecoratorTestDrive {
 
         Coffee espressoWithDecor = new Espresso();
         espressoWithDecor = new Sugar(new Milk(espressoWithDecor));
-        System.out.println(espressoWithDecor.getDescription()+ " $" + formatSum(espressoWithDecor.cost()));
+        System.out.println(espressoWithDecor.getDescription() + " $" + formatSum(espressoWithDecor.cost()));
 
         Coffee instantWithDecor = new InstantCoffee();
         instantWithDecor = new Sugar(new Sugar(new Sugar(new WhippedCream(instantWithDecor))));
@@ -15,7 +15,8 @@ class CoffeeDecoratorTestDrive {
 
         System.out.println("I'm drinking my " + instantWithDecor.getDescription());
         Thread.sleep(1500);
-        System.out.println("-I want to add some Whipped Cream to my coffee. And don't make a new one! Just add Whipped Cream");
+        System.out.println("-I want to add some Whipped Cream to my coffee." +
+                " And don't make a new one! Just add Whipped Cream");
         Thread.sleep(1500);
         System.out.println("-Okay! But the final price will change");
         Thread.sleep(1500);
@@ -73,6 +74,7 @@ class Milk extends Decorator {
     private Coffee coffee;
 
     public Milk(Coffee coffee) {
+        super();
         this.coffee = coffee;
     }
 
@@ -93,6 +95,7 @@ class Sugar extends Decorator {
     private Coffee coffee;
 
     public Sugar(Coffee coffee) {
+        super();
         this.coffee = coffee;
     }
 
@@ -113,12 +116,13 @@ class WhippedCream extends Decorator {
     private Coffee coffee;
 
     public WhippedCream(Coffee coffee) {
+        super();
         this.coffee = coffee;
     }
 
     @Override
     String getDescription() {
-        return coffee.getDescription() + ", WhippedCream";
+        return coffee.getDescription() + ", Whipped Cream";
     }
 
     @Override
