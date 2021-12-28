@@ -80,7 +80,6 @@ class Subsystem4 {
 }
 
 // Test
-
 var f: Facade = Facade.Current
 Facade.Current.Func()
 Facade.Current.Sample()
