@@ -22,9 +22,9 @@ class ScrollDecorator: WindowDecorator
     self.targetWindow.Render()
   }
 
-  func ScrollBy(amaount: Int)
+  func ScrollBy(amount: Int)
   {
-    print("\(targetWindow.Title) penceresi \(amaount) birim kaydırıldı")
+    print("\(targetWindow.Title) penceresi \(amount) birim kaydırıldı")
     Render()
   }
 }
@@ -120,7 +120,7 @@ var decorator3:ThemeDecorator = ThemeDecorator(targetWindow: wnd3, title: "Satı
 
 var decorator4:ThemeDecorator = ThemeDecorator(targetWindow: wnd2, title: "Stok Raporu Ekranı")
 
-decorator1.ScrollBy(amaount: 5)
+decorator1.ScrollBy(amount: 5)
 decorator2.SetTheme(name: "Gökyüzü")
 decorator3.SetTheme(name: "Sonbahar")
 decorator4.SetTheme(name: "Deniz")
