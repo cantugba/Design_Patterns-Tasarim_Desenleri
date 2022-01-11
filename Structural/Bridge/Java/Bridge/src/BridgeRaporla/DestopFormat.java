@@ -3,21 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bridgeraporla;
+package BridgeRaporla;
 
 /**
  *
  * @author asus
  */
-public class Employee extends Report{
-
-    public Employee(IReportFormat format) {
-        super(format);
-    }
+public class DestopFormat implements IReportFormat {
 
     @Override
-    void Display() {
-        format.genearate();
+    public void genearate() {
+        System.out.println("Masaustu formatına gore raporlandı");
     }
     
 }

@@ -3,17 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bridgeraporla;
+package BridgeRaporla;
 
 /**
  *
  * @author asus
  */
-public class WebFormat implements IReportFormat {
+public class Employee extends Report{
+
+    public Employee(IReportFormat format) {
+        super(format);
+    }
 
     @Override
-    public void genearate() {
-        System.out.println("webe gore raporlandı");
+    void Display() {
+        format.genearate();
     }
     
 }
