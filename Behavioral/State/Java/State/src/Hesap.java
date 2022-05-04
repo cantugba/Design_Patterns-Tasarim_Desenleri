@@ -13,7 +13,8 @@ public class Hesap {
         hesapDurumu.paraCek();
     }
 
-    public void hesapDurumuDegistir(final HesapDurumu hesapDurumu) {
+    public void hesapDurumuDegistir(
+            final HesapDurumu hesapDurumu) {
         this.hesapDurumu = hesapDurumu;
     }
 }

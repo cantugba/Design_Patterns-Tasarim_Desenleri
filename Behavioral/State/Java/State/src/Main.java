@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         /*
-        Soket nesnesini olusturuyoruz
+        Soket nesnesini olusturuyoruz,
         her Do metodunu calistirdigimizda farkli islemler calisacaktir
          */
 
